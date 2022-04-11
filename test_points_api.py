@@ -6,7 +6,7 @@ import inspect
 
 from point_manager import PointManager
 from sqlalchemy import create_engine
-from base import base
+from base import Base
 
 class TestPointApi(unittest.TestCase):
 
