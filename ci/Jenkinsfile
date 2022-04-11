@@ -16,7 +16,7 @@ pipeline {
                 }
             }
         }
-        stage("Integration Test) {
+        stage("Integration Test") {
             steps {
                 sh "python3 test_points_api.py"
             }
