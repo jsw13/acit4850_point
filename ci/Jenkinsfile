@@ -16,5 +16,15 @@ pipeline {
                 }
             }
         }
+        stage("Integration Test) {
+            steps {
+                sh "python3 test_points_api.py"
+            }
+            post {
+                always {
+                    junit "api-test-reports/*.xml"
+                }
+            }
+        }
     }
 }
