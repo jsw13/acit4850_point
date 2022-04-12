@@ -3,7 +3,8 @@ FROM ubuntu:18.04
 LABEL maintainer="joseph.sze.wong@gmail.com"
 
 RUN apt-get update -y && \
-    apt-get install -y python-pip python-dev
+    apt-get install -y python-pip python-dev && \
+    apt-get upgrade python-pip
 
 COPY ./requirements.txt /app/requirements.txt
 
